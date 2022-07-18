@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
 import cors from "cors";
-import posts from "../routers/post.js";
+import user from "../routers/user.js";
 import mongoose from "mongoose";
 
 const connectDB = async () => {
@@ -16,7 +16,9 @@ const connectDB = async () => {
     );
     console.log("Conect ok");
     const PORT = 3000;
-    app.listen(PORT, "172.16.134.46");
+    app.listen(PORT, () => {
+      console.log(`Starting on ${PORT}`);
+    });
   } catch (error) {
     console.log(error.message);
     process.exit(1);
@@ -39,7 +41,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(morgan("combined"));
 
-app.use("/adasafgjakja", posts);
+app.use("/api/user", user);
 
 // app.get("/post", (req, res) =>
 //   res.send({
