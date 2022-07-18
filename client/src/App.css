@@ -1,38 +1,332 @@
-.App {
-  text-align: center;
+@media (min-width: 1025px) {
+
+  .nav-mobile-icon {
+    display: none !important;
+  }
+
+  .p-5 {
+    padding: 3rem !important;
+  }
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Tablet */
+@media (min-width:740px) and (max-width:1025px) {}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Mobile */
+
+@media (max-width:739px) {
+
+  .nav-content {
+    margin: 0 20px !important;
+  }
+
+  .top-bar {
+    display: none
+  }
+
+  .nav-list-link {
+    display: none !important;
+  }
+
+  .content2-content {
+    display: block !important;
+  }
+
+  .content-content {
+    display: block !important;
+  }
+
+  .footer-content-above {
+    display: block !important;
+  }
+
+  .footer-content-left {
+    display: block !important;
+  }
+
+  .content-img {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .content-content-right {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .content2-title::after {
+    display: flex;
+    position: absolute;
+    content: '';
+    background-color: #0d6efd;
+    width: 200px !important;
+    height: 2px;
+    left: calc(50%/2) !important;
+  }
+
+  .slider-app-title {
+    display: none !important;
+  }
+
+  .slider-bg {
+    height: 200px !important;
+  }
+
+  .slider-app {
+    display: none !important
+  }
+
+  .content2-all-item .content2-list-item>li>span {
+    text-align: center !important;
+  }
+
+  .content-container {
+    margin: 0 10px !important;
+    text-align: center !important;
+  }
+
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .content-img {
+    margin-bottom: 20px !important;
+  }
+
+  .content2-title {
+    margin-top: 0 !important;
+  }
+
+  .content2-all-item {
+    margin-top: 50px !important;
+  }
+
+  .footer-content-left {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .footer-content-center {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+
+
+  .footer-content-right {
+    margin: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .Slider-Contact-Container-Content {
+    display: block !important;
+  }
+
+  .Slider-Contact-Container-img {
+    width: 100% !important;
+  }
+
+  .Slider-Contact-Container-form {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .form-sp-container {
+    justify-content: center !important;
+  }
+
+  .item-sp {
+    width: 42% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .carousel-item {
+    margin-top: 100px !important;
+  }
+
+  .Slider-Contact-Container-Content {
+    text-align: center !important;
+  }
+
+  .Slider-Contact-Container-img {
+    padding-left: 20px !important;
+  }
+
+  .Slider-Contact-Container-form {
+    padding: 0 20px !important;
+  }
+
+  .Slider-Intro_Content_About {
+    display: block !important;
+  }
+
+  .Slider-Intro_Content_All>p {
+    text-align: center !important;
+  }
+
+  .Slider-Intro_Content_About_text {
+    margin: 0 20px !important;
+  }
+
+  .Slider-Intro_Content_About_text>p {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .Slider-Intro_Content_About_text>ul {
+    margin-bottom: 20px !important;
+  }
+
+  .Slider-Intro_Content_About-below>p {
+    margin: 50px 20px !important;
+  }
+
+  .container-item>ul {
+    margin: 0 20px !important;
+  }
+
+  .sliderUse-app {
+    display: none !important;
+  }
+
+  .SliderUser-Img {
+    height: 200px !important;
+  }
+
+  .UserContainer-Content {
+    display: block !important;
+  }
+
+  .UserContainer-Content-Img {
+    display: none !important;
+  }
+
+  .UserContainer-Content-List {
+    margin: 0 0 0 50px !important;
+  }
+
+  .UseContainer {
+    margin: 150px 0 50px 0 !important;
+  }
+
+  .UserContainer-Content-Item-Content-Text {
+    max-width: 300px !important;
+  }
+
+  .UserContainer-Content-List-Item>li {
+    width: 150% !important;
+  }
+
+  .sliderPro-img {
+    /* margin-top: 200px; */
+    padding-top: 100px !important;
+  }
+
+  .FormRegister-content {
+    display: block !important;
+  }
+
+  .rules-container {
+    width: 100% !important;
+    padding: 0 25px !important;
+  }
+
+  .card {
+    border: none !important;
+  }
+
+  .FormRegister-Container {
+    padding-bottom: 0px !important;
+    padding-top: 120px !important;
+  }
+
+  .example-1 {
+    height: 200px !important;
+  }
+
+  .FormRegister-Container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .FormRegister-content-form {
+    width: 100% !important;
+  }
+
+  .p-5 {
+    border: #ccc solid 1px !important;
+    padding: 20px 10px 20px 10px !important;
+  }
+
+  .FormRegister-content-form {
+    margin-top: 50px !important;
+  }
+
+  .tab-content {
+    display: block !important;
+  }
+
+  .rules-content-login {
+    width: 100% !important;
+
+  }
+
+  .Login-Content {
+    padding: 120px 15px 50px 15px !important;
+  }
+
+  .login-form-format {
+    margin-top: 50px !important;
+    width: 100% !important;
+  }
+
+  .List-Support-Container {
+    right: 5% !important;
+  }
+
+  .info-patient-content {
+    display: block !important;
+  }
+
+  .info-patient-content {
+    margin: 50px 20px !important;
+  }
+
+  .List-router-profile,
+  .profile-patient {
+    width: 100% !important;
+  }
+
+  .Info-Patient-container {
+    font-size: 14px !important;
+  }
+
+  .List-router-profile>ul>li {
+    font-size: 14px !important;
+  }
+
+  .Siler-Patient {
+    padding-top: 100px !important;
+  }
+
+  .location-add {
+    font: 14px !important;
+  }
+
+  .mobile-format {
+    text-align: center !important;
+  }
+
+  .mobile-format>h6 {
+    margin: 0 0 15px 0 !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import-normalize;

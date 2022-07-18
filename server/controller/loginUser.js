@@ -1,11 +1,22 @@
-import jwt from "jsonwebtoken";
+import { UserPatient } from "../models/accountPatient.js";
+import { UserDoctor } from "../models/accountDoctor.js";
 
-export const getUser = async (req, res) => {
+export const getUserPatient = async (req, res) => {
   try {
-    const createUser = await User.find();
-
+    const createUser = await UserPatient.find();
+    console.log(createUser);
     res.status(200).json(createUser);
   } catch (error) {
-    res.status(500).json({ error: err });
+    res.status(500).json({ error: error });
+  }
+};
+
+export const getUserDoctor = async (req, res) => {
+  try {
+    const createUser = await UserDoctor.find();
+    console.log(createUser);
+    res.status(200).json(createUser);
+  } catch (error) {
+    res.status(500).json({ error: error });
   }
 };
