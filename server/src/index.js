@@ -17,7 +17,7 @@ const connectDB = async () => {
     console.log("Conect ok");
     const PORT = 3000;
     app.listen(PORT, () => {
-      console.log(`Starting on ${PORT}`);
+      console.log(`Starting on PORT ${PORT}`);
     });
   } catch (error) {
     console.log(error.message);
