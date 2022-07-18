@@ -16,7 +16,7 @@ const connectDB = async () => {
     );
     console.log("Conect ok");
     const PORT = 3000;
-    app.listen(PORT, () => console.log(`OK ${PORT}`));
+    app.listen(PORT, "172.16.134.46");
   } catch (error) {
     console.log(error.message);
     process.exit(1);
@@ -26,6 +26,12 @@ const connectDB = async () => {
 connectDB();
 
 const app = express();
+
+app.use(
+  cors({
+    origin: true,
+  })
+);
 
 app.use(express.json());
 
